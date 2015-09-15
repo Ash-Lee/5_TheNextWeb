@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   <!-- width=device-width may not be required -->
+        <title>5_TheNextWeb</title>
+            
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/media-queries.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Convergence" type="text/css">   <!-- Google Web Fonts - https://www.google.com/fonts# -->
+            
+        <!-- detect if a browser supports a specific feature - feature detection library for HTML5 and CSS3 - http://modernizr.com/download/ -->    
+        <script src="js/modernizr.js"></script>
+
+        <!-- enables responsive design in IE and other browsers which don't support CSS Media Queries - https://github.com/scottjehl/Respond -->     
+        <script src="js/respond.js"></script>
+        
+        <!-- include jQuery library - Google host jQuery file - allows scripts.js below to be executed - alt http://code.jquery.com/jquery-1.11.3.js -->    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <!-- include external jQuery file but fall back to local file if external one fails to load -->
+        <script type="text/javascript">window.jQuery || document.write('<script type="text\/javascript" src="js\/1.7.2.jquery.min"><\/script>')</script>
+            
+        <!-- prevents manually typing all browser specific prefixes for CSS3 features - http://leaverou.github.io/prefixfree/ -->
+        <script src="js/prefixfree.min.js"></script>
+    </head>
+    
+    <body>
+        <div id="page">
+            <header id="main_header">
+                <h1 class="hidden">TNW Responsive Design</h1>
+                <a href="#" id="logo"><img src="assets/header/tnw-logo.png" alt="TNW"></a>
+                <nav id="nav_header">
+                    <h1 class="hidden">Navigation</h1>
+                    <ul>
+                        <li class="hide"><a href="#">apps</a></li>
+                        <li class="hide"><a href="#">gear</a></li>
+                        <li class="hide"><a href="#">tech</a></li>
+                        <li class="hide"><a href="#">creative</a></li>
+                        <li class="hide"><a href="#">money</a></li>
+                        <li class="hide"><a href="#">insights</a></li>
+                        <li class="hide"><a href="#">launch</a></li>
+                        <li class="hide"><a href="#">world</a></li>
+                        <li class="hide"><a href="#">distract</a></li>
+                        <li><a href="#">more</a></li>
+                    </ul>
+                </nav>
+                <nav id="nav_header_search">
+                    <h1 class="hidden">Search</h1>
+                    <a href="#"></a>
+                </nav>
+            </header>
+            
+            
+            <section id="headlines">
+                <h1 class="hidden">Headlines</h1>
+                <div class="large_headline float">
+                    <a href="#" class="large_content">
+                        <header>
+                            <h2>I switched from a MacBook Pro to a Chromebook Pixel 2. Here's what happened...</h2>
+                            <ul>
+                                <li>3h ago</li>
+                                <li>12 comments</li>
+                            </ul>
+                        </header>
+                    </a>
+                </div>
+                
+                <div class="medium_headline float">
+                    <a href="#" class="medium_content">
+                        <header>
+                            <h2>The Light Phone is a credit card-sized phone designed to be used as little as possible</h2>
+                            <ul>
+                                <li>7h ago</li>
+                            </ul>
+                        </header>
+                    </a>
+                </div>
+                
+                <div class="small_headline_1 float">
+                    <a href="#" class="small_content_1">
+                        <header>
+                            <h2>Why Facebook doesn't like your brand</h2>
+                            <ul>
+                                <li>36h ago</li>
+                                <li>2 comments</li>
+                            </ul>
+                        </header>
+                    </a>
+                </div>
+                
+                <div class="small_headline_2 float">
+                    <a href="#" class="small_content_2">
+                        <header>
+                            <h2>Adblockers are immoral and mobile networks should know better</h2>
+                            <ul>
+                                <li>9h ago</li>
+                                <li>92 comments</li>
+                            </ul>
+                        </header>
+                    </a>
+                </div>
+            </section>  <!-- /end #headlines -->
+        
+        
+            <section id="latest_news">
+                <header class="topic_header">
+                    <a href="#"><h1>Latest news</h1></a>
+                    <a href="#"><h2>All latest news</h2></a>
+                </header>
+                
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/typography.jpg);"></div>
+                            <h2>25 of our favourite typefaces released in April</h2>
+                            <p>1h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/emoji.jpg);"></div>
+                            <h2>The next emoji update will clarify their meanings: Are you using them right?</h2>
+                            <p>1h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/whatsapp.jpg);"></div>
+                            <h2>How to implement WhatsApp messaging into your business</h2>
+                            <p>1h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/breadcrumb.jpg);"></div>
+                            <h2>Groupon's Breadcrumb Live iPhone app lets restaurants monitor business in real-time</h2>
+                            <p>1h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/nikondog.jpg);"></div>
+                            <h2>Meet Grizzler, the dog Nikon turned into a photographer</h2>
+                            <p>2h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/iosswiftcourse.png);"></div>
+                            <h2>Learn to code iOS 8 apps with this comprehensive course for only $89</h2>
+                            <p>2h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/stylio.png);"></div>
+                            <h2>Stylio makes personal shopping accessible for stylists and shoppers alike</h2>
+                            <p>2h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/businessapp.jpg);"></div>
+                            <h2>How to choose the perfect apps for your business</h2>
+                            <p>2h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/windows10.jpg);"></div>
+                            <h2>Three mistakes Microsoft should avoid when launching Windows 10</h2>
+                            <p>2h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/extensions.jpg);"></div>
+                            <h2>You should be using these browser extensions to keep yourself safe online</h2>
+                            <p>3h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/financialtimes.jpg);"></div>
+                            <h2>The Financial Times introduces 'cost per hour' ad metric to focus on engagement</h2>
+                            <p>3h ago</p>
+                        </a>
+                    </li>
+                    
+                    <li class="news_link">
+                        <a href="#">
+                            <div style="background-image: url(assets/latest-news/socialmediabudget.jpg);"></div>
+                            <h2>How to spend just $100 on a social media budget</h2>
+                            <p>3h ago</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>  <!-- /end #latest_news -->
+            
+            
+            <section id="topic_section">
+                <header class="topic_header">
+                    <a href="#"><h1>Apps</h1></a>
+                    <h3>Updates on apps for desktop, Android, iOS and the web</h3>
+                    <a href="#"><h2>All stories in Apps</h2></a>
+                </header>
+                
+                <ul class="topic_body">
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/apps/whatsapp.jpg);"></div>
+                            <h2>How to implement whatsApp messaging into your business</h2>
+                            <p>While many of us consider WhatsApp a handy way for staying in touch with friends and family, the messaging ...</p>
+                        </a>
+                        <p>6h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/apps/breadcrumb.jpg);"></div>
+                            <h2>Groupon's Breadcrumb Live iPhone app lets restaurants monitor business in real-time</h2>
+                            <p>Groupon acquired Breadcrumb back in 2012 and it's been chugging along ever since, even as rivals like ...</p>
+                        </a>
+                        <p>7h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/apps/stylio.png);"></div>
+                            <h2>Stylio makes personal shopping accessible for stylists and shoppers alike</h2>
+                            <p>When it comes to fashion and shopping, technology has made things more accessible. Instead of spending ...</p>
+                        </a>
+                        <p>8h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/apps/businessapp.jpg);"></div>
+                            <h2>How to choose the perfect app for your business</h2>
+                            <p>Choosing a business app is not the same as choosing a consumer app. You can't just download and delete ...</p>
+                        </a>
+                        <p>8h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/apps/emojiapps.jpg);"></div>
+                            <h2>30 branded emoji keyboard apps hit Apple's App Store and Google Play</h2>
+                            <p>The public's love affair with emoji has - not surprisingly - been noticed by the marketing community ...</p>
+                        </a>
+                        <p>7h ago</p>
+                    </li>
+                </ul>
+            </section>  <!-- /end #apps -->
+            
+            
+            <section id="topic_section">
+                <header class="topic_header">
+                    <a href="#"><h1>Gear</h1></a>
+                    <h3>Laptops, smart watches, electric cars, drones and pretty much everything you can switch on</h3>
+                    <a href="#"><h2>All stories in Gear</h2></a>
+                </header>
+                
+                <ul class="topic_body">
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/gear/wristboom.jpg);"></div>
+                            <h2>This $49 wearable Bluetooth speaker actually sounds pretty great</h2>
+                            <p>The Wristboom is a $49 Bluetooth speaker you strap on like a watch. That's the basic pitch Bigr is selling ...</p>
+                        </a>
+                        <p>3h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/gear/audi-sport-bike.jpg);"></div>
+                            <h2>This Audi bike weighs less than a few iPhones</h2>
+                            <p>Cycling enthusiasts may not baulk at the thought of spending several thousand dollars on a decent bicycle ... </p>
+                        </a>
+                        <p>3h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/gear/adapter-gen-car.png);"></div>
+                            <h2>Automatic launches an updated 'smart car' dongle and third-party app gallery</h2>
+                            <p>Automatic has updated its in-dash Bluetooth dongle and introduced a new app gallery. For the uninitiated ...</p>
+                        </a>
+                        <p>5h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/gear/watch-update.jpg);"></div>
+                            <h2>Apple releases its first update for the Apple Watch, including new emojis</h2>
+                            <p>Apple today put out the first update for the Apple Watch: Watch OS version 1.01. It's a small update ...</p>
+                        </a>
+                        <p>6h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/gear/zed-drone.jpg);"></div>
+                            <h2>ZED stereo camera simulates human visual depth perception</h2>
+                            <p>Despite advances in visual technology that let machines emulate a vast degree of human brain function ...</p>
+                        </a>
+                        <p>8h ago</p>
+                    </li>
+                </ul>
+            </section>  <!-- /end #gear -->
+            
+            
+            <section id="topic_section">
+                <header class="topic_header">
+                    <a href="#"><h1>Tech</h1></a>
+                    <h3>Internet of things, development, code, infrastructure, security, cloud</h3>
+                    <a href="#"><h2>All stories in Tech</h2></a>
+                </header>
+                
+                <ul class="topic_body">
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/tech/cyber-security.jpg);"></div>
+                            <h2>Top cyber-security training from TNW Deals</h2>
+                            <p>If you want to make a career out of thwarting cyber-criminals, or just want to secure your own projects ... ..."</p>
+                        </a>
+                        <p>9h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/tech/bitcoin.jpg);"></div>
+                            <h2>Bitcoin gains mainstream support with NYSE index launching today</h2>
+                            <p>The New York Stock Exchange has announced that it plans to make available a Bitcoin index on the NYSE ...</p>
+                        </a>
+                        <p>9h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/tech/twitter-search.jpg);"></div>
+                            <h2>Twitter rolls out new search results interface on its site</h2>
+                            <p>Twitter's new search results interface is now rolling out to all logged-in users on its site, with a ...</p>
+                        </a>
+                        <p>17h ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/tech/iosswiftcourse.png);"></div>
+                            <h2>Learn to code iOS 8 apps with this comprehensive course for only $89</h2>
+                            <p>One of the biggest pieces of tech news of last year was Apple's new Swift programming languages. If ...</p>
+                        </a>
+                        <p>1d ago</p>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div style="background-image: url(assets/tech/weekend-roundup.jpg);"></div>
+                            <h2>Offline over the weekend? Read all the tech news you missed right here</h2>
+                            <p>If you spent the weekend offline, hanging out with friends, eating pizza and otherwise enjoying yourself, ...</p>
+                        </a>
+                        <p>1d ago</p>
+                    </li>
+                </ul>
+            </section>  <!-- /end #tech -->
+            
+            <footer id="main_footer">
+                <header class="footer_header">
+                    <a href="#"><img src="assets/footer/footer-logo.png" alt="TNW"></a>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </header>
+                
+                <div class="footer_body_left float">
+                    <ul>
+                        <li><a href="#" class="twitter"></a></li>
+                        <li><a href="#" class="facebook"></a></li>
+                        <li><a href="#" class="google+"></a></li>
+                        <li><a href="#" class="twitter"></a></li>
+                        <li><a href="#" class="youtube"></a></li>
+                        <li><a href="#" class="linkedin"></a></li>
+                        <li><a href="#" class="pintrest"></a></li>
+                        <li><a href="#" class="instagram"></a></li>
+                        <li><a href="#" class="vine"></a></li>
+                        <li><a href="#" class="rss"></a></li>
+                    </ul>
+                    
+                    <blockquote>
+                        <p><span>A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty.</span> <cite>Winston Churchill, British Prime Minister</cite></p>
+                    </blockquote>
+                </div>
+                    
+                <div class="footer_body_right float">
+                    <a href="#"><img src="assets/footer/maxcdn.png" alt="maxcdn"></a>
+                </div>
+
+                <div class="footer_bottom float">
+                    <p>&copy; 2001-2015 The Next Web, Inc. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>  <!-- /end #page -->
+    </body>
+</html>

@@ -1,0 +1,547 @@
+/* 5_TheNextWeb - CSS Style*/
+
+html, body {
+    height: 100%;
+    font-size: 14px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+#page {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 48px;
+}
+
+
+
+/*----------------------------------------*/
+  /* Default Styles */
+/*----------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    display: inline-block;
+}
+
+.float {
+    float: left;
+}
+
+
+
+/*----------------------------------------*/
+  /* Layout Grid */
+/*----------------------------------------*/
+#main_header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+#headlines {
+    width: 100%;
+    height: 80%;
+    border-bottom: 1px solid #ECECEC;
+    padding: 1rem;
+}
+
+#latest_news {
+    width: 100%;
+    padding: 0 5%;
+    height: auto;
+    min-height: 190px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ECECEC;
+}
+
+#topic_section {
+    width: 100%;
+    padding: 0 5% 2rem;
+    height: auto;
+    margin: 0 auto;
+    border-bottom: 1px solid #ECECEC;
+    background-color: #F6F6F6;
+}
+
+#main_footer {
+    width: 100%;
+    height: 330px;
+    padding: 3rem 0 2rem;
+    background-color: #000;
+    border-bottom: 4px solid #FF4020;
+}
+
+
+
+/*========================================*/
+  /* main_header */
+/*========================================*/
+#main_header #logo {
+    width: 165px;
+    height: 48px;
+    display: inline-block;
+}
+
+#main_header #logo img {
+    width: auto;
+}
+
+#main_header #nav_header {
+    margin-left: -4px;
+}
+
+#main_header #nav_header,
+#main_header #nav_header li {
+    display: inline-block;
+    height: 48px;
+    font-size: 0;   /* removes inline-block whitespace between li elements */
+}
+
+#main_header #nav_header li a {
+    display: block;
+    height: 48px;
+    padding: 18px 12px 0px;
+    font-family: "Convergence", sans-serif;
+    text-transform: uppercase;
+    line-height: 12px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #999;
+}
+
+#main_header #nav_header li a:hover {
+    background-color: #F6F6F6;
+}
+
+#main_header #nav_header li:first-child a {
+    padding-left: 18px;
+}
+
+#main_header #nav_header li:last-child a {
+    padding-right: 28px;
+}
+
+#main_header #nav_header_search {
+    float: right;
+    margin-right: 1px;
+    border-left: 1px solid #F3F3F3;
+}
+
+#main_header #nav_header_search a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    padding-top: 17px;
+    background-image: url("../assets/header/search.png");
+}
+
+#main_header #nav_header_search a:hover {
+    background-image: url("../assets/header/search-hover.png");
+}
+
+
+
+/*========================================*/
+  /* headlines */
+/*========================================*/
+#headlines div a {
+    display: block;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#headlines div a header {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 1rem 1.25rem;
+}
+
+#headlines div a header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.15em;
+    color: #FFF;
+}
+
+#headlines div a header ul li {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#headlines .large_headline {
+    width: 50%;
+    height: 100%;
+    padding-right: 0.5rem;
+}
+
+#headlines .large_content {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url("../assets/headlines/chromebook.jpg");
+}
+
+#headlines .medium_headline {
+    width: 50%;
+    height: 50%;
+    padding: 0 0 0.5rem 0.5rem;
+}
+
+#headlines .medium_content {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url("../assets/headlines/lightphone.gif");
+}
+
+#headlines .small_headline_1,
+#headlines .small_headline_2 {
+    width: 25%;
+    height: 50%;
+    padding: 0.5rem 0 0 0.5rem;
+}
+
+#headlines .small_headline_1 {
+    padding-right: 0.5rem;
+}
+
+#headlines .small_content_1 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url("../assets/headlines/facebook.jpg");
+}
+
+#headlines .small_content_2 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url("../assets/headlines/adblocker.jpg");
+}
+
+
+
+/*========================================*/
+  /* Template - topic_header */
+/*========================================*/
+.topic_header  {
+    height: 90px;
+    padding: 1.5rem 0 2rem;
+}
+
+.topic_header a {
+    display: inline-block;
+}
+
+.topic_header a:last-child {
+    float: right;
+}
+
+.topic_header a h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #FF4020;
+}
+
+.topic_header a h1:hover {
+    color: #000;
+}
+
+.topic_header h3 {
+    display: inline-block;
+    margin: 1.05em 0 0 0.5em;
+    font-size: 16px;
+    color: #999;
+}
+
+.topic_header a h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 1.05em;
+    color: #FF4020;
+}
+
+.topic_header a h2:hover {
+    color: #000;
+}
+
+
+
+/*========================================*/
+  /* latest_news */
+/*========================================*/
+#latest_news ul {
+    width: auto;
+    height: 100%;
+    font-size: 0;   /* removes inline-block whitespace between li elements */
+}
+
+#latest_news ul li {
+    width: 16.667%;
+    height: auto;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    padding: 0 0.5rem 0;
+}
+
+#latest_news ul li a {
+    display: block;
+    height: 100%;
+}
+
+#latest_news ul li a div {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 0.75rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#latest_news ul li a h2 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.3rem;
+}
+
+#latest_news ul li:hover a h2 {
+    text-decoration: underline;
+    -moz-text-decoration-color: #FFB3A6;
+    text-decoration-color: #FFB3A6;
+}
+
+#latest_news ul li a p {
+    font-size: 12px;
+    color: #999;
+}
+
+
+
+/*========================================*/
+  /* Template - topic_body */
+/*========================================*/
+.topic_body {
+    width: 100%;
+    font-size: 0;
+}
+
+.topic_body li {
+    width: 19.2%;
+    height: auto;
+    margin-right: 1%;
+    background-color: #FFF;
+}
+
+.topic_body li:hover {
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.topic_body li:first-child {
+    margin-left: 0;
+}
+
+.topic_body li:last-child {
+    margin-right: 0;
+}
+
+.topic_body li a {
+    display: block;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+.topic_body li a div {
+    width: auto;
+    height: 122px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.topic_body li a h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin: 0.5rem 0.8rem 0.5rem;
+}
+
+.topic_body li a:hover h2 {
+    text-decoration: underline;
+    -moz-text-decoration-color: #FFB3A6;
+    text-decoration-color: #FFB3A6;
+}
+
+.topic_body li a p {
+    margin: 0 0.8rem 0.5rem;
+    font-size: 13px;
+    color: #888;
+    line-height: 1.1rem;
+}
+
+.topic_body li > p {
+    margin: 0.5rem 0.8rem 0.25rem;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*========================================*/
+  /* main_footer */
+/*========================================*/
+#main_footer .footer_header {
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+#main_footer .footer_header a {
+    display: inline-block;
+}
+
+#main_footer .footer_header ul {
+    display: inline-block;
+    float: right;
+    margin-top: 17px;
+}
+
+#main_footer .footer_header ul li {
+    margin-left: 8px;
+}
+
+#main_footer .footer_header ul li a {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #888;
+}
+
+#main_footer .footer_header ul li a:hover {
+    color: #FFF;
+}
+
+#main_footer .footer_body_left {
+    width: 40%;
+    height: 63%;
+    margin-left: 10%;
+}
+
+#main_footer .footer_body_left ul {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+#main_footer .footer_body_left ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-color: #888;
+}
+
+#main_footer .footer_body_left ul li a:hover {
+    background-color: #FFF;
+}
+
+#main_footer .footer_body_left blockquote {
+    margin-top: 2rem;
+}
+
+#main_footer .footer_body_left blockquote p {
+    color: #FFF;
+    font-size: 16px;
+    font-style: italic;
+    display: inline-block;
+    line-height: 2rem;
+}
+
+#main_footer .footer_body_left blockquote p span:before {
+    content: "“";
+}
+
+#main_footer .footer_body_left blockquote p span:after {
+    content: "”";
+}
+
+#main_footer .footer_body_left blockquote p cite {
+    display: inline-block;
+    font-style: normal;
+    color: #888;
+}
+
+#main_footer .footer_body_left blockquote p cite:before {
+    content: " - "
+}
+
+#main_footer .footer_body_right {
+    width: 40%;
+    height: 63%;
+    margin-right: 10%;
+}
+
+#main_footer .footer_body_right a {
+    display: inline-block;
+    float: right;
+    width: 125px;
+    height: 125px;
+}
+
+#main_footer .footer_body_right a img {
+    width: 100%;
+}
+
+#main_footer .footer_bottom {
+    width: 100%;
+    height: 17%;
+    padding-top: 30px;
+    padding-left: 10%;
+    border-top: 1px solid #888;
+    color: #888;
+}
+
+#main_footer .footer_bottom p {
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+/*----------------------------------------*/
+  /* Misc */
+/*----------------------------------------*/
+.clear_float:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear_float {
+    zoom: 1;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear_float {
+    zoom: 1;
+}
+
+.hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);    /*IE6 + IE7*/
+    clip: rect(1px, 1px, 1px, 1px);
+}
